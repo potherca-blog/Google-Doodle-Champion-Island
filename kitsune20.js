@@ -13589,18 +13589,13 @@ var Ok = [[{U: [], nodeName: "cabinet1", V: "arcade", tags: {W: [""]}, text: "Ma
     tags: {W: ["yoichiNeutral"]},
     text: "I'm always up for a game of Archery! Meet me outside at the red gate on the beach if you want to challenge me."
   }]];
-var Pk = createjs.Bitmap, Qk = function () {
-  return Pk.apply(this, arguments) || this
-};
-q(Qk, Pk);
-Qk.prototype.initialize = function (b) {
+createjs.Bitmap.prototype.initialize = function (b) {
   if (b && "sprite" in b) {
     var g = b.sprite;
     this.image = b.sheet.xY[Rk(g)].ha;
     this.sourceRect = new createjs.Rectangle(g[1], g[2], g[3], g[4])
   } else this.image = b, this.sourceRect = new createjs.Rectangle(0, 0, 10, 10)
 };
-createjs.Bitmap = Qk;
 var Sk = {};
 var Tk = Sk;
 (function (b, g) {
