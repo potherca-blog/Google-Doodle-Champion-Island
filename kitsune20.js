@@ -2344,17 +2344,17 @@ var Fe = function () {
 };
 q(Fe, oe);
 var z = {};
-z.RU = new Ee("/logos/2020/kitsune/rc6/", "archery");
-z.BS = new Ee("/logos/2020/kitsune/rc6/", "climbing");
-z.bK = new Ee("/logos/2020/kitsune/rc6/", "marathon");
-z.nX = new Ee("/logos/2020/kitsune/rc6/", "overworld");
-z.vJ = new Ee("/logos/2020/kitsune/rc6/", "pingpong");
-z.cL = new Ee("/logos/2020/kitsune/rc6/", "rugby");
-z.iN = new Ee("/logos/2020/kitsune/rc6/", "skate");
-z.c1 = new Ee("/logos/2020/kitsune/rc6/", "ballad");
-z.K1 = new Ee("/logos/2020/kitsune/rc6/", "disco");
-z.j5 = new Ee("/logos/2020/kitsune/rc6/", "rock");
-z.xJ = new Ee("/logos/2020/kitsune/rc6/", "shared");
+z.RU = new Ee(window.root, "archery");
+z.BS = new Ee(window.root, "climbing");
+z.bK = new Ee(window.root, "marathon");
+z.nX = new Ee(window.root, "overworld");
+z.vJ = new Ee(window.root, "pingpong");
+z.cL = new Ee(window.root, "rugby");
+z.iN = new Ee(window.root, "skate");
+z.c1 = new Ee(window.root, "ballad");
+z.K1 = new Ee(window.root, "disco");
+z.j5 = new Ee(window.root, "rock");
+z.xJ = new Ee(window.root, "shared");
 var A = {};
 A.yqa = new y(z.RU, 0, 666.6669921875, 0);
 A.zqa = new y(z.RU, 1666.6669921875, 187.5, 0);
@@ -2634,7 +2634,7 @@ var cf = navigator.userAgent, df = new Ke(location.href), ef = "sdoodles" === do
   };
 cf.includes("GT-I9300") && cf.includes("Chrome");
 var lf = function () {
-  return df.Ca.includes("/logos/") && df.Ca.includes(".html")
+  return true // df.Ca.includes("/logos/") && df.Ca.includes(".html")
 }, nf = function () {
   return !! document.getElementById("fkbx") || mf()
 }, mf = function () {
@@ -2763,7 +2763,7 @@ var Af = function (b, g) {
     Pf && g.ha.set("gl", Pf);
     Hf(g.toString(), ! 1)
   };
-var Yf = Jf("id", "144867217"), Gb = new xb(vb, "/logos/2020/kitsune/rc6/kitsune_compiled_deferred_module.js"),
+var Yf = Jf("id", "144867217"), Gb = new xb(vb, window.root+"kitsune_compiled_deferred_module.js"),
   $f = 1 / 30, ag = 1E3 * $f, bg = new createjs.Rectangle(0, 0, 960, 540), cg = ["PixelMplus10"],
   dg = void 0 != Xe("debug"), eg = [{TeamId: 0, GlobalScore: 32940, RecordCount: 590}, {
     TeamId: 1,
@@ -22055,7 +22055,7 @@ var jl = function (b, g, m) {
   })
 };
 var ml = function () {
-  jl.call(this, "/logos/2020/kitsune/rc6/", ll, ! 1)
+  jl.call(this, window.root, ll, ! 1)
 };
 q(ml, jl);
 Ga(ml);
@@ -24829,7 +24829,7 @@ An.prototype.load = function (b) {
   return ya(function (a) {
     if (1 == a.ha) {
       g.kb.style.background = "#000";
-      m = "/logos/2020/kitsune/rc6/" + b + ".mp4";
+      m = window.root + b + ".mp4";
       if (m in g.Bb) return k = g.Bb[m], g.ha = k, a.return(k);
       c = new xn;
       g.ha = c;
@@ -25295,7 +25295,7 @@ var mo = [5, 6, 7, 8, 9, 11, 12, 16], no = 0, oo = ! 1, po = {}, qo = [], ro = f
   g ? (g = Xf()) && (m += "&ved=" + g) : k && (Uf || ((g = document.getElementById("hplogoshareved")) ? Uf = g.getAttribute("data-ved") : pf() && bf(df.ha, "sved") && (Uf = df.ha.get("sved"))),
   (g = Uf) && (m += "&ved=" + g));
   -1 == m.search("&ei=") && (m += "&ei=", (g = Wf()) && (m += g));
-  for (window.google && window.google.log ? window.google.log("doodle", m) : Je(m); 0 < qo.length;) delete po[qo.pop()];
+  // for (window.google && window.google.log ? window.google.log("doodle", m) : Je(m); 0 < qo.length;) delete po[qo.pop()];
   oo || 0 != b || gl() || (oo = ! 0, so(10))
 };
 var to = function (b) {
@@ -31449,7 +31449,7 @@ var bw = function (b) {
     if (b && g) {
       po.d = Yf;
       ! oo && gl() && (oo = ! 0, so(10));
-      var m = [Jv(), kl(ml.AJ(), 0), xh(yh).load(Of, Pf, Ge, "/logos/2020/kitsune/rc6/")];
+      var m = [Jv(), kl(ml.AJ(), 0), xh(yh).load(Of, Pf, Ge, window.root)];
       Promise.all(m).then(function () {
         ["348D233EE4ED48398F13A42B3BD73D9C", "462CEA9764EE4C8D86AB0BDFEAEB1BF9"].map(function (k) {
           return Sn(k)
